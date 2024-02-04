@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiplayer Platform</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div>
+        <div class="mobile-controls">
+            <button class="btn up"  id="up-button">UP</button>
+            <button class="btn left" id="left-button">LEFT</button>
+            <button class="btn down" id="down-button">DOWN</button>
+            <button class="btn right" id="right-button">RIGHT</button>
+        </div>
+
+        <canvas class="game" width="300" height="300" id="canvas"></canvas>
+
+        <p>Users connected: <span id="players-count"></span></p>
+    </div>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

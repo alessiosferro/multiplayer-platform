@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    touch-action: pan-x pan-y;
+    height: 100%
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    font-size: 1.6rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.mobile-controls {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+            ". up ."
+            "left down right";
+
+    margin-bottom: 2rem;
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: .4rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.up {
+    grid-area: up;
+}
+
+.down {
+    grid-area: down;
+}
+
+.right {
+    grid-area: right;
+}
+
+.left {
+    grid-area: left;
+}
+
+.game {
+    background-color: black;
+}
